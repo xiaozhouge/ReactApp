@@ -1,0 +1,79 @@
+.Home{
+  		display: flex;
+  		>ul{
+				width: 200px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				li{
+					width: 100%;
+					height: 30px;
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+					border-bottom: 1px solid #e6e6e6;
+					margin-top: 3px;
+					padding-left: 5px;
+				}
+				li:nth-child(1){
+					border: 1px solid #e6e6e6;
+					background: #ddd;
+					margin-top: 0;
+					padding-left: 0;
+					justify-content: center;
+					button{
+						width: 100%
+					}
+				}
+			}
+  		.Likeword{
+			flex: 3;
+			padding: 15px;
+			.savefile{
+				display: flex;
+				justify-content: space-between;
+				>label{
+					display: flex;
+					span{
+						white-space: nowrap;
+						display: flex;
+						align-items: center;
+						font-weight: 600;
+					}
+					
+				}
+			}
+			>table{
+				input{
+					border: 0;
+					outline:none;
+					width: 80%;
+				}
+				td:nth-child(1){
+					white-space: nowrap;
+					color:#ff9100;
+					cursor: pointer;
+				}
+			}
+			>.serverAndRouter{
+				margin-top: 50px;
+				border-top: 1px solid #ccc;
+				padding-top: 10px;
+				>p{
+					>span{
+						color:red;	
+						font-weight: 16px;
+						margin-right: 20px;
+					}
+					
+				}
+				>table{
+					input{
+						border: 0;
+						outline: none;
+						width: 100%
+					}
+				}
+			}
+		}
+}

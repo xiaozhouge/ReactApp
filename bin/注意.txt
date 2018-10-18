@@ -1,0 +1,14 @@
+每次安装依赖，都会让webpack配置重置，需要手动修改
+1./node_modules/react-script/config/webapack.config.dev.js
+
+test: /\.css$/ ==> test: /\.(css|less)$/
+新增loader{loader: require.resolve('less-loader')}
+
+2./node_modules/react-script/config/webapack.config.prod.js
+
+test: /\.css$/ ==> test: /\.(css|less)$/
+新增loader{loader: require.resolve('less-loader')}
+
+3./node_modules/react-script/config/webapack.config.path.js
+
+url.parse(publicUrl).pathname : '/') ==> url.parse(publicUrl).pathname : './')
